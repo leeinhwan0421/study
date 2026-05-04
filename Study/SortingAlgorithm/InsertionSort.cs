@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Study.Sorting_algorithm
+namespace Study.SortingAlgorithm
 {
-    internal class Selection_sort
+    internal class InsertionSort
     {
         static public void Sort()
         {
@@ -18,7 +18,7 @@ namespace Study.Sorting_algorithm
                 arr[i] = int.Parse(Console.ReadLine());
             }
 
-            Selection(arr);
+            Insertion(arr);
 
             foreach (int it in arr)
             {
@@ -28,27 +28,32 @@ namespace Study.Sorting_algorithm
             Console.ReadLine();
         }
 
-        static private void Selection(int[] arr)
+        static private void Insertion(int[] arr)
         {
-
             for (int i = 0; i < arr.Length; i++)
             {
-                int min = i;
+                int insert_point = i;
+                int insert_val = arr[insert_point];
 
-                for (int j = i + 1; j < arr.Length; j++)
+                for (int j = i - 1; j >= 0; j--)
                 {
-                    if (arr[j] < arr[min])
+                    if (arr[j] < arr[i])
                     {
-                        min = j;
+                        insert_point = j + 1;
+                        break;
+                    }
+                    if (j == 0)
+                    {
+                        insert_point = 0;
                     }
                 }
 
-                if (arr[i] > arr[min])
+                for (int j = i; j > insert_point; j--)
                 {
-                    int tmp = arr[i];
-                    arr[i] = arr[min];
-                    arr[min] = tmp;
+                    arr[j] = arr[j - 1];
                 }
+
+                arr[insert_point] = insert_val;
             }
         }
     }

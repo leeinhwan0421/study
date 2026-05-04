@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Study.Sorting_algorithm
+namespace Study.SortingAlgorithm
 {
-    internal class Merge_sort
+    internal class MergeSort
     {
         static public void Sort()
         {

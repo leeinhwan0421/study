@@ -18,7 +18,7 @@ namespace Study
             // problem.solution(Param);
 
             // Sort 집어넣기
-            // Sorting_algorithm.Count_sort.Sort();
+            // SortingAlgorithm.Count_sort.Sort();
 
             // Notepad
             // Notepad.Notepad.Run();

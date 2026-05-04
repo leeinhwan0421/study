@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Study.Sorting_algorithm
+namespace Study.SortingAlgorithm
 {
-    internal class Radix_sort
+    internal class RadixSort
     {
         static public void Sort()
         {

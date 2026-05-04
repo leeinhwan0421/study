@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Study.Sorting_algorithm
+namespace Study.SortingAlgorithm
 {
 
-    internal class Bubble_sort
+    internal class BubbleSort
     {
         static public void Sort()
         {

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Study.Sorting_algorithm
+namespace Study.SortingAlgorithm
 {
-    internal class Count_sort
+    internal class CountSort
     {
         static public void Sort()
         {
